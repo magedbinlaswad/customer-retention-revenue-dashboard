@@ -1,38 +1,42 @@
-# Customer Retention & Revenue Intelligence Dashboard
+🧠 Customer Retention & Revenue Analytics
 
-## 📌 Project Overview
-This project is an end-to-end analytics solution designed to analyze customer retention, revenue performance, and sales trends using SQL, Python, and Power BI.
+End-to-end analytics project using SQL, Python, and Power BI to analyze revenue performance and customer retention patterns.
 
-The goal is to transform raw retail transaction data into actionable business insights that support data-driven decision-making.
+⸻
 
----
+🎯 Business Case
 
-## 🛠 Tools & Technologies
-- SQL (Joins, Aggregations, CTEs, Window Functions)
-- Python (Pandas for data cleaning & transformation)
-- Power BI (Interactive dashboard & KPI tracking)
-- Star Schema Data Modeling
+The objective of this project is to analyze business revenue trends and customer retention behavior to support data-driven decision-making.
 
----
+This project answers key business questions such as:
+ • Is revenue growing month over month?
+ • Are customers returning after their first purchase?
+ • Which customers generate the highest lifetime value?
+ • Which countries contribute most to revenue?
 
-## 📊 Key KPIs
-- Total Revenue
-- Revenue Growth %
-- Customer Retention Rate
-- Repeat Purchase Rate
-- Average Order Value
-- Top Products by Revenue
+⸻
 
----
+📊 Executive Dashboard Summary
 
-## 🏗 Project Structure
-1. Data Cleaning & Preprocessing (Python)
-2. Data Modeling (Fact & Dimension Tables)
-3. SQL Analysis & KPI Calculations
-4. Power BI Dashboard Development
-5. Business Insights & Recommendations
+This dashboard was designed to support executive-level decision-making by providing insights into revenue performance and customer behavior.
 
----
+🔹 Revenue Performance
+ • Monthly revenue trend analysis
+ • Revenue growth rate calculation
+ • Revenue by country breakdown
 
-## 🎯 Business Objective
-To identify customer behavior patterns, revenue trends, and retention performance in order to support strategic business decisions.
+🔹 Customer Insights
+ • Repeat customer analysis
+ • High-value customers identification
+ • Customer lifetime value (CLV)
+
+🔹 Retention Analysis
+ • Cohort-based customer retention
+ • Monthly retention patterns
+
+⸻
+
+🛠 Tools & Technologies
+ • SQL (Joins, CTEs, Window Functions, Aggregations)
+ • Python (Pandas, Data Cleaning, EDA)
+ • Power BI (Interactive Dashboard & Visualization)
