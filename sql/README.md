@@ -1,12 +1,11 @@
-📄 SQL Analysis Scripts
+# 📄 SQL Analysis Scripts #
 
 This folder contains SQL Server queries used for business analysis and KPI development.
 
 The queries focus on revenue performance, customer behavior, and business growth insights.
 
-⸻
 
-📊 Included Analysis
+## 📊 Included Analysis ##
 
 1 – Monthly Revenue
 
@@ -40,9 +39,8 @@ Uses window functions to calculate month-over-month revenue growth.
 
 Uses a CTE to identify customers whose spending is above the average.
 
-⸻
 
-🧠 Purpose
+## 🧠 Purpose ##
 
 These scripts demonstrate:
  - Aggregations and GROUP BY
