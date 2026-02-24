@@ -45,9 +45,9 @@ Uses a CTE to identify customers whose spending is above the average.
 🧠 Purpose
 
 These scripts demonstrate:
- • Aggregations and GROUP BY
- • HAVING and filtering logic
- • Window Functions
- • Common Table Expressions (CTE)
- • Business KPI development
- • Real-world analytical problem solving
+ - Aggregations and GROUP BY
+ - HAVING and filtering logic
+ - Window Functions
+ - Common Table Expressions (CTE)
+ - Business KPI development
+ - Real-world analytical problem solving
