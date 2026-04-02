@@ -36,4 +36,4 @@ This dashboard was designed to support executive-level decision-making by provid
 ## 🛠 Tools & Technologies ##
   - SQL (Joins, CTEs, Window Functions, Aggregations)
   - Python (Pandas, Data Cleaning, EDA)
-  - Power BI (Interactive Dashboard & Visualization)
+  - 🚧 Power BI dashboards are currently in progress and will be added soon.
