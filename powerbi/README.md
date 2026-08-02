@@ -48,13 +48,6 @@ powerbi/
 
 ---
 
-## 🚀 How to Use
-1. Download the .pbix file  
-2. Open it using Power BI Desktop  
-3. Explore the dashboard using filters and visuals  
-
----
-
 ## 👤 Author
 MAGED BIN LASWAD  
 LinkedIn: https://www.linkedin.com/in/maged-bin-laswad-63261726a  
