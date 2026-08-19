@@ -44,7 +44,7 @@ powerbi/
 ---
 
 ## 📸 Dashboard Preview
-![Dashboard Screenshot]()
+![Dashboard Screenshot](https://github.com/magedbinlaswad/customer-retention-revenue-dashboard/blob/d820235c35aeff3a2bc8ddd66ece5c0250ab064f/powerbi/customer-retention-dashboard.png)
 
 ---
 
