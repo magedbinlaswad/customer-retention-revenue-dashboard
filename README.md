@@ -1,39 +1,48 @@
-# 🧠 Customer Retention & Revenue Analytics #
+🧠 Customer Retention & Revenue Analytics
 
-End-to-end analytics project using SQL, Python, and Power BI to analyze revenue performance and customer retention patterns.
+End-to-end analytics project using SQL, Excel, Power Query, and Power BI to analyze revenue performance, customer purchasing behavior, and repeat customer patterns.
 
+🎯 Business Case
 
-## 🎯 Business Case ##
+The objective of this project is to analyze sales performance and customer behavior to support data-driven business decision-making.
 
-The objective of this project is to analyze business revenue trends and customer retention behavior to support data-driven decision-making.
+The project analyzes 146K+ sales records, covering 7.3K orders and 2.7K customers, and answers key business questions such as:
 
-This project answers key business questions such as:
-- Is revenue growing month over month?
-- Are customers returning after their first purchase?
-- Which customers generate the highest lifetime value?
-- Which countries contribute most to revenue?
+How is revenue performing over time?
+What percentage of customers make repeat purchases?
+Which customers contribute the most to total revenue?
+Which countries generate the highest revenue?
+Which products are the strongest revenue contributors?
 
+📊 Executive Dashboard Summary
 
-## 📊 Executive Dashboard Summary ##
-
-This dashboard was designed to support executive-level decision-making by providing insights into revenue performance and customer behavior.
+The dashboard was developed to provide a clear view of key business KPIs and customer purchasing patterns.
 
 🔹 Revenue Performance
- - Monthly revenue trend analysis
- - Revenue growth rate calculation
- - Revenue by country breakdown
+
+$3.36M total revenue
+Revenue trend analysis
+Revenue performance by country
+Product sales performance
+Identification of key revenue contributors
 
 🔹 Customer Insights
- - Repeat customer analysis
- - High-value customers identification
- - Customer lifetime value (CLV)
 
-🔹 Retention Analysis
-  - Cohort-based customer retention
-  - Monthly retention patterns
+52% repeat customer rate
+High-value customer identification
+Customer purchasing behavior analysis
+Customer revenue concentration analysis
+Top 10 customers contributed 17.3% of total sales
 
+🔹 Sales & Geographic Analysis
 
-## 🛠 Tools & Technologies ##
-  - SQL (Joins, CTEs, Window Functions, Aggregations)
-  - Python (Pandas, Data Cleaning, EDA)
-  - Developed an interactive Power BI dashboard to analyze customer retention, revenue trends, and key business KPIs
+Sales distribution across countries
+Product-level revenue analysis
+Customer and market performance comparison
+Identification of major sales patterns and revenue concentration
+
+🛠 Tools & Technologies
+
+SQL — Joins, CTEs, Window Functions, Aggregations, Filtering, and Data Validation
+Microsoft Excel & Power Query — Data Cleaning, Duplicate Review, Missing-Value Checks, Data Standardization, and Preparation
+Power BI — Interactive dashboard development, KPI visualization, customer analysis, revenue trends, product performance, and geographic sales analysis
