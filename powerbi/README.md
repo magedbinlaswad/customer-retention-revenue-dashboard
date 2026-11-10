@@ -1,54 +1,26 @@
-# 📊 Customer Retention & Revenue Dashboard (Power BI)
+# Power BI dashboard preview
 
-## 📌 Overview
-This project presents an interactive Power BI dashboard designed to analyze customer retention and revenue performance. The dashboard provides actionable insights into customer behavior, revenue trends, and overall business performance.
+![Customer and revenue dashboard](customer-retention-dashboard.png)
 
----
+## What the preview shows
 
-## 🎯 Objectives
-- Analyze customer retention patterns  
-- Track revenue performance over time  
-- Identify key drivers of customer value  
-- Support data-driven decision making  
+- Total orders, customers, quantity, and revenue.
+- A monthly sales trend and month filters.
+- Sales by country and top products.
 
----
+This is a static screenshot of the original Power BI report. Filters are not interactive on GitHub. The screenshot does not display the repeat-customer KPI discussed in the main project; see the [SQL analysis](../sql/) for the repeat-purchase logic.
 
-## 📊 Key Features
-- Revenue analysis and trends  
-- Customer segmentation insights  
-- Retention and churn indicators  
-- Interactive filters for dynamic analysis  
+## Available files
 
----
+| File | Purpose |
+| --- | --- |
+| [customer-retention-dashboard.png](customer-retention-dashboard.png) | Dashboard screenshot |
+| README.md | Preview and publication notes |
 
-## 📈 Dashboard Insights
-- Identified key customer segments contributing to the majority of revenue  
-- Highlighted trends in customer retention over time  
-- Provided visibility into high-value customers and potential churn risks  
+The original `.pbix` file, DAX measures, and model definition are not published in this repository. The preview cannot be refreshed or independently inspected as a Power BI model. The main [README](../README.md) documents the analysis scope and metric definitions.
 
----
+## Interpretation
 
-## 🛠️ Tools & Technologies
-- Power BI  
-- SQL  
-- Excel  
+Revenue uses the source data's units; confirm the currency before quoting monetary results. A monthly sales trend and month-over-month percentage growth are different measures and should be labeled with their units when the report is next updated.
 
----
-
-## 📂 Project Structure
-powerbi/
-├── customer-retention-dashboard.pbix
-├── dashboard.png
-├── README.md
-
----
-
-## 📸 Dashboard Preview
-![Dashboard Screenshot](https://github.com/magedbinlaswad/customer-retention-revenue-dashboard/blob/d820235c35aeff3a2bc8ddd66ece5c0250ab064f/powerbi/customer-retention-dashboard.png)
-
----
-
-## 👤 Author
-MAGED BIN LASWAD  
-LinkedIn: https://www.linkedin.com/in/maged-bin-laswad-63261726a  
-GitHub: https://github.com/magedbinlaswad
+[Back to project](../README.md) · [Maged Bin Laswad on LinkedIn](https://www.linkedin.com/in/maged-binlaswad-63261726a/)
