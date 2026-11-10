@@ -13,7 +13,7 @@ Import the [cleaned CSV sample](../data/online_retail_cleaned_sample.csv), check
 | [5_customer_lifetime_value.sql](5_customer_lifetime_value.sql) | How much observed-period revenue is associated with each customer? |
 | [6_monthly_order_volume.sql](6_monthly_order_volume.sql) | How many distinct orders occur in each month? |
 | [7_monthly_revenue_growth.sql](7_monthly_revenue_growth.sql) | How does monthly revenue change from the previous observed month? |
-| [8_high_value_customers.sql](8_high_value_customers.sql) | Which customers spend more than the customer average? |
+| [8_high_value_customers.sql](8_high_value_customers.sql) | Which customers have total spending above the configured 5,000-unit threshold? |
 
 ## Definitions and assumptions
 
