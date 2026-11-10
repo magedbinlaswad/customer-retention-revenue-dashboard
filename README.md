@@ -1,48 +1,72 @@
-🧠 Customer Retention & Revenue Analytics
+# Customer & Revenue Analytics
 
-End-to-end analytics project using SQL, Excel, Power Query, and Power BI to analyze revenue performance, customer purchasing behavior, and repeat customer patterns.
+**SQL Server · Power BI · Excel · Power Query**
 
-🎯 Business Case
+An analytical portfolio project exploring revenue performance, repeat purchasing, and customer concentration across retail transaction data.
 
-The objective of this project is to analyze sales performance and customer behavior to support data-driven business decision-making.
+![Customer and revenue dashboard](powerbi/customer-retention-dashboard.png)
 
-The project analyzes 146K+ sales records, covering 7.3K orders and 2.7K customers, and answers key business questions such as:
+[SQL analysis](sql/) · [Sample data](data/) · [Dashboard details](powerbi/)
 
-How is revenue performing over time?
-What percentage of customers make repeat purchases?
-Which customers contribute the most to total revenue?
-Which countries generate the highest revenue?
-Which products are the strongest revenue contributors?
+## Business questions
 
-📊 Executive Dashboard Summary
+- How does revenue change from month to month?
+- Which customers, countries, and products contribute the most revenue?
+- How many customers place more than one order during the observed period?
+- How concentrated is revenue among the highest-spending customers?
 
-The dashboard was developed to provide a clear view of key business KPIs and customer purchasing patterns.
+## Results from the original analysis
 
-🔹 Revenue Performance
+| Metric | Reported result |
+| --- | ---: |
+| Sales records analyzed | 146K+ |
+| Orders | 7,341 |
+| Customers | 2,716 |
+| Total revenue | 3.36M |
+| Repeat customer rate | 52% |
+| Top 10 customers' share of revenue | 17.3% |
 
-$3.36M total revenue
-Revenue trend analysis
-Revenue performance by country
-Product sales performance
-Identification of key revenue contributors
+These figures describe the original analysis. The CSV files published here are demonstration samples, so running the queries on them will produce sample-level results. Revenue is shown without a currency symbol because the published assets do not establish the currency.
 
-🔹 Customer Insights
+## Metric definitions
 
-52% repeat customer rate
-High-value customer identification
-Customer purchasing behavior analysis
-Customer revenue concentration analysis
-Top 10 customers contributed 17.3% of total sales
+- **Orders:** distinct invoice IDs. A transaction line is not a separate order.
+- **Repeat customer rate:** customers with more than one distinct invoice divided by customers with at least one invoice in the observation period. This is a repeat-purchase measure, not a cohort-based retention or churn rate.
+- **Customer revenue:** revenue accumulated within the available data. The legacy CLV script measures observed customer revenue; it does not forecast future lifetime value.
+- **Revenue concentration:** the top 10 customers' revenue divided by total revenue, using the same data scope and filters.
 
-🔹 Sales & Geographic Analysis
+The dashboard preview shows the sales overview. Repeat purchasing is covered by the SQL analysis; the published screenshot does not display the repeat-customer KPI.
 
-Sales distribution across countries
-Product-level revenue analysis
-Customer and market performance comparison
-Identification of major sales patterns and revenue concentration
+## Analysis workflow
 
-🛠 Tools & Technologies
+1. Review sample fields, missing values, transaction validity, and date types.
+2. Load the cleaned sample into SQL Server as `retail_sales`.
+3. Run the SQL files to examine monthly sales, repeat customers, customer value, and concentration.
+4. Review the Power BI screenshot alongside the documented metric definitions.
+5. Interpret the outputs within the data's observation period and sample coverage.
 
-SQL — Joins, CTEs, Window Functions, Aggregations, Filtering, and Data Validation
-Microsoft Excel & Power Query — Data Cleaning, Duplicate Review, Missing-Value Checks, Data Standardization, and Preparation
-Power BI — Interactive dashboard development, KPI visualization, customer analysis, revenue trends, product performance, and geographic sales analysis
+## Repository guide
+
+| Path | Contents |
+| --- | --- |
+| [data/](data/) | Original and cleaned CSV samples, with usage notes |
+| [sql/](sql/) | Eight SQL analysis scripts and a query guide |
+| [powerbi/](powerbi/) | Static dashboard preview and publication notes |
+
+## Run the SQL examples
+
+Use SQL Server with a client such as SQL Server Management Studio. Import `data/online_retail_cleaned_sample.csv` into a table named `retail_sales`. Match the column names used in the queries, including `Customer_ID`, `Invoice_ID`, `Invoice_Date`, `Revenue`, and `Country`. Set dates and numeric columns to appropriate SQL types before execution.
+
+Run each script in [sql/](sql/) separately. Compare counts and totals before interpreting the results; the repository does not include an automated database setup or the full source dataset.
+
+## Business interpretation
+
+The reported revenue concentration suggests that high-value customer relationships warrant monitoring. Repeat purchasing can help identify customer groups for further investigation. These findings support analysis and prioritization; no revenue uplift or causal business impact is claimed.
+
+## Published scope
+
+The repository includes SQL, sample data, and a static Power BI screenshot. The original PBIX file, exported DAX/model definitions, and complete cleaning implementation are not currently included. An interactive report is not linked. The samples demonstrate the query structure and are not a substitute for the complete dataset.
+
+## Author
+
+**Maged Bin Laswad** · [LinkedIn](https://www.linkedin.com/in/maged-binlaswad-63261726a/)
